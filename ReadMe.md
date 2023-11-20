@@ -6,7 +6,7 @@
 
 A feature of my game is that unresolvable situations are checked for, which are situations where the puzzle cannot be completed by the player no matter how they swap the tiles. A mathematical algorithm was used by me to detect these situations and generate a new puzzle for the player. This way, a fair and solvable puzzle is always ensured for the player by the game➕.
 
-### Tools and Libraries used
+### Tools and Techniques used
 
 
 - [Javascript Patterns](https://patterns.dev) With power of pure js language and with help of some proper design patterns like Observer, Singleton.
