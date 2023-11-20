@@ -8,7 +8,8 @@ A feature of my game is that unresolvable situations are checked for, which are 
 
 ### Tools and Libraries used
 
-- [Javascript](https://javascript.com) With power of pure js language and with help of some proper design patterns like Observer, Singleton.
+
+- [Javascript Patterns](https://patterns.dev) With power of pure js language and with help of some proper design patterns like Observer, Singleton.
 
 - [Vitest](https://vitest.dev) To ensure that the game works properly in all situation by writing unit tests🧪(98% of code coverage).
 
