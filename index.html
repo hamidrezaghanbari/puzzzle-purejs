@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzzle 🧩🧩🧩</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+
+      <h1>🧩 Super Puzzzle Game 🧩</h1>
+      <div class="grid-wrapper" id="puzzle-wrapper" test-id="puzzle-wrapper">
+      </div>
+      
+      <div class="status-wrapper">
+        <h2 id='game_status'>Start moving Tile !</h2>
+        <h3 id='moves'>0</h3>
+      </div>
+
+      <div class="game-action">
+        <select class="level">
+          <option value="2">Easy</option>
+          <option value="3">Medium</option>
+          <option value="4">Hero Level</option>
+        </select>
+
+        <button class="btn" type="button">
+          Reset
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
