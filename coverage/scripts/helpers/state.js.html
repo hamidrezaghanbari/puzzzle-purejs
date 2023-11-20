@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.19% </span>
+                <span class="strong">87.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>25/47</span>
+                <span class='fraction'>41/47</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">87.5% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>7/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.19% </span>
+                <span class="strong">87.23% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>25/47</span>
+                <span class='fraction'>41/47</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -130,28 +130,28 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -180,25 +180,25 @@ class State {
     puzzleState = [...state.map((innerState) =&gt; [...innerState])];
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  change(prevPosition, nextPosition) {</span>
-<span class="cstat-no" title="statement not covered" >    const { row: prevRow, column: prevColumn } = prevPosition;</span>
-<span class="cstat-no" title="statement not covered" >    const { row: nextRow, column: nextColumn } = nextPosition;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    puzzleState[nextRow][nextColumn] = puzzleState[prevRow][prevColumn];</span>
-<span class="cstat-no" title="statement not covered" >    puzzleState[prevRow][prevColumn] = "";</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  change(prevPosition, nextPosition) {
+    const { row: prevRow, column: prevColumn } = prevPosition;
+    const { row: nextRow, column: nextColumn } = nextPosition;
 &nbsp;
-<span class="fstat-no" title="function not covered" >  getEmptySlotPosition() {</span>
-<span class="cstat-no" title="statement not covered" >    const copy = [...puzzleState.map((item) =&gt; [...item])];</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    const emptySlotItem = copy.flat().findIndex((item) =&gt; !item);</span>
-<span class="cstat-no" title="statement not covered" >    const size = puzzleState.length;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
-<span class="cstat-no" title="statement not covered" >      row: Math.floor(emptySlotItem / size),</span>
-<span class="cstat-no" title="statement not covered" >      column: emptySlotItem % size,</span>
-<span class="cstat-no" title="statement not covered" >    };</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+    puzzleState[nextRow][nextColumn] = puzzleState[prevRow][prevColumn];
+    puzzleState[prevRow][prevColumn] = "";
+  }
+&nbsp;
+  getEmptySlotPosition() {
+    const copy = [...puzzleState.map((item) =&gt; [...item])];
+&nbsp;
+    const emptySlotItem = copy.flat().findIndex((item) =&gt; !item);
+    const size = puzzleState.length;
+&nbsp;
+    return {
+      row: Math.floor(emptySlotItem / size),
+      column: emptySlotItem % size,
+    };
+  }
 }
 &nbsp;
 const SingletonPuzzleState = Object.freeze(new State());
@@ -211,7 +211,7 @@ export default SingletonPuzzleState;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-19T16:51:37.550Z
+                at 2023-11-20T12:40:36.689Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
